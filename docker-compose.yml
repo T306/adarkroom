@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  ungames:
+    image: t306dev/adarkroom:latest
+    ports:
+        - "83:80"
+    restart: always
+    labels:
+      - homepage.group=Stuff
+      - homepage.name=Ungames2
+      - homepage.href=http://pixel.local:83
+#       - homepage.icon=adarkroom.png
